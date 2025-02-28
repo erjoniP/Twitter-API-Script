@@ -25,7 +25,7 @@ This Python script demonstrates how to authenticate with the Twitter API using O
    source venv/bin/activate  # On Windows use: venv\Scripts\activate
    pip install python-dotenv requests-oauthlib
 
-3. **Create a .env file in the same directory as twitter_script.py and add your API credentials. For example:
+3. Create a .env file in the same directory as twitter_script.py and add your API credentials. For example:
    ```
    TWITTER_API_KEY=FAKE_API_KEY_123456
    TWITTER_API_SECRET_KEY=FAKE_API_SECRET_ABCDEF
