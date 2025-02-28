@@ -22,12 +22,11 @@ def like_tweet(tweet_id):
     Likes a tweet specified by tweet_id using Twitter API v2 endpoint.
     
     Endpoint: POST /2/users/:id/likes
-    :param tweet_id: The ID of the tweet to like.
+    :parameter tweet_id: The ID of the tweet to like.
     """
     # Construct the endpoint URL using the authenticated user's ID
     url = f"https://api.twitter.com/2/users/{TWITTER_USER_ID}/likes"
     payload = {"tweet_id": tweet_id}
-    
     # Create an OAuth1Session for authenticating the request using OAuth 1.0a
     oauth = OAuth1Session(API_KEY,
                           client_secret=API_SECRET_KEY,
@@ -47,10 +46,10 @@ def like_tweet(tweet_id):
         logger.error(f"An error occurred: {e}")
 
 def main():
-    # Example tweet ID to like; replace with an actual tweet ID
+    # tweet ID to like
     tweet_id = "1894913640748179538"
     
-    # Ensure all required credentials are available
+    # Ensures all required credentials are available
     if not all([API_KEY, API_SECRET_KEY, ACCESS_TOKEN, ACCESS_TOKEN_SECRET, TWITTER_USER_ID]):
         logger.error("One or more Twitter API credentials are missing. Please check your .env file.")
         return
