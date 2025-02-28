@@ -32,7 +32,7 @@ This Python script demonstrates how to authenticate with the Twitter API using O
    TWITTER_ACCESS_TOKEN=FAKE_ACCESS_TOKEN_1234567890
    TWITTER_ACCESS_TOKEN_SECRET=FAKE_ACCESS_TOKEN_SECRET_ABCDEF
    TWITTER_USER_ID=1234567890
-   Note: The values above are sample (fake) credentials. Replace them with your actual credentials from the Twitter Developer Portal. Ensure your app has Read and Write permissions, and if you change permissions, regenerate your access token and secret.
+Note: The values above are sample (fake) credentials. Replace them with your actual credentials from the Twitter Developer Portal. Ensure your app has Read and Write permissions, and if you change permissions, regenerate your access token and secret.
 
 ## How to Run the Script
 
